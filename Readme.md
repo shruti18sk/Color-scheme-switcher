@@ -66,21 +66,16 @@ ASCII
 Color-scheme-switcher/
 ├── index.html                  # Contains the HTML structure, CSS styling, and JS logic
 ├── preview/
-│   ├── preview-teal.png.png    # Teal theme preview screenshot
-│   └── preview-pink.png        # Pink theme preview screenshot
+│   ├── preview-pink.png    # Pink theme preview screenshot
+│   └── preview-teal.png        # Teal theme preview screenshot
 └── README.md                   # Project documentation
 
 Use code with caution.
 
 Copy code text to clipboard.
 
-#### Screenshots
+#### Preview
 
 Teal Theme SelectedPink Theme Selected
-****
 
-#### Future Enhancements
 
-* Add a **Reset** button to restore the default gray (#f0f0f0) theme.
-* Save the user's selected theme using localStorage so it persists on page reload.
-* Separate CSS and JavaScript into standalone files (style.css and script.js).
