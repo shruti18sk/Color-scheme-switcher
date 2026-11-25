@@ -24,7 +24,7 @@
     /* Other styles */
     #switcher {
       list-style-type: none;
-      padding: 0;
+      padding: 10px 0;
     }
 
     #switcher li {
@@ -32,15 +32,23 @@
       width: 50px;
       height: 50px;
       cursor: pointer;
-      margin: 5px;
+      margin: 8px;
       border: 2px solid #ffffff;
       outline: 2px solid #333333;
-      border-radius: 8px;
-      transition: transform 0.2s ease;
+      border-radius: 10px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
+    /* Cursor le jane par button bada hoga */
     #switcher li:hover {
-      transform: scale(1.1);
+      transform: scale(1.25);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Click karne ke baad selected button bada rahega */
+    #switcher li.active {
+      transform: scale(1.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
   </style>
 </head>
@@ -58,36 +66,46 @@
   <p>Try clicking on one of the colors above to change the colors on this page!</p>
 
   <script>
-    // JavaScript for color scheme switcher
+    const buttons = document.querySelectorAll('#switcher li');
     const pinkButton = document.getElementById('pinkButton');
     const coralButton = document.getElementById('coralButton');
     const tealButton = document.getElementById('tealButton');
     const redButton = document.getElementById('redButton');
     const blackButton = document.getElementById('blackButton');
 
+    function setActiveButton(selectedBtn) {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      selectedBtn.classList.add('active');
+    }
+
     pinkButton.addEventListener('click', () => {
       document.body.style.backgroundColor = '#ff69b4';
       document.body.style.color = '#333';
+      setActiveButton(pinkButton);
     });
 
     coralButton.addEventListener('click', () => {
       document.body.style.backgroundColor = '#ff7f50';
       document.body.style.color = '#333';
+      setActiveButton(coralButton);
     });
 
     tealButton.addEventListener('click', () => {
       document.body.style.backgroundColor = '#008080';
       document.body.style.color = '#fff';
+      setActiveButton(tealButton);
     });
 
     redButton.addEventListener('click', () => {
       document.body.style.backgroundColor = '#ff0000';
       document.body.style.color = '#fff';
+      setActiveButton(redButton);
     });
 
     blackButton.addEventListener('click', () => {
       document.body.style.backgroundColor = '#000000';
       document.body.style.color = '#fff';
+      setActiveButton(blackButton);
     });
   </script>
 
