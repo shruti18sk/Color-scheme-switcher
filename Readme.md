@@ -1,86 +1,81 @@
-#### Color Scheme Switcher
+# 🎨 Color Scheme Switcher
 
-A simple, lightweight, and interactive web application built with HTML, CSS, and JavaScript that lets users dynamically change the background and text color scheme of the webpage with a single click. 
+A simple and interactive web application built using **HTML, CSS, and JavaScript** that allows users to change the webpage's background and text colors with a single click.
 
-#### Features
+The project features five different color themes, along with smooth hover effects and visual feedback for the selected color.
 
-* **One-Click Theme Switching:** Instantly switch between 5 distinct color themes (Pink, Coral, Teal, Red, and Black).
-* **Interactive Hover & Active Effects:** Buttons smoothly scale up on hover and stay highlighted when selected.
-* **High-Visibility Double Borders:** Styled with white and dark borders so active color buttons remain clearly visible against matching backgrounds.
-* **Automatic Text Contrast:** Text color automatically adjusts between dark (#333) and light (#fff) to ensure readability on every background.
-* **Zero Dependencies:** Built purely with vanilla HTML, internal CSS, and JavaScript—no external libraries or frameworks required.
+## ✨ Features
 
-#### Color Palettes Included
+- **Five Color Themes:** Switch between Pink, Coral, Teal, Red, and Black.
+- **One-Click Theme Switching:** Change the webpage's background and text color instantly.
+- **Interactive Hover Effects:** Color buttons smoothly scale up when hovered over.
+- **Active Button Highlight:** The selected color button remains highlighted.
+- **Smooth Transitions:** Background and text colors change with smooth CSS transitions.
+- **Lightweight Application:** Built using vanilla HTML, CSS, and JavaScript without any external libraries.
 
-ButtonBackground HexText Hex
-****Pink****
-#ff69b4#333333
-****Coral****
-#ff7f50#333333
-****Teal****
-#008080#ffffff
-****Red****
-#ff0000#ffffff
-****Black****
-#000000#ffffff
+## 🖥️ Preview
 
-#### Getting Started
+### Pink Theme
+![Pink Theme Preview](preview/preview-pink.png)
 
-#### Prerequisites
+### Teal Theme
+![Teal Theme Preview](preview/preview-teal.png)
 
-You only need a modern web browser (such as Chrome, Firefox, Edge, or Safari) to run this project. 
+## 🛠️ Technologies Used
 
-#### Installation & Usage
+- **HTML5** – For webpage structure and content.
+- **CSS3** – For styling, transitions, hover effects, and button animations.
+- **JavaScript** – For handling click events and dynamically changing color themes.
 
-1. **Clone the repository:** 
+## 📂 Project Structure
 
-bash
-
-git clone https://github.com/shruti18sk/Color-scheme-switcher.git
-
-Use code with caution.
-
-Copy code text to clipboard.
-2. **Navigate to the project folder:** 
-
-bash
-
-cd Color-scheme-switcher
-
-Use code with caution.
-
-Copy code text to clipboard.
-3. **Open the application:**
-Double-click the main.html file to open it directly in your default browser, or use a local server like VS Code Live Server.
-
-#### Project Structure
-
-Show Code
-
-Hide Code
-
-Download diagram SVG
-
-ASCII
-
+```text
 Color-scheme-switcher/
-├── main.html               # Contains the HTML structure, CSS styling, and JS logic
-├── preview/
-│   ├── preview-teal.png    # Teal theme preview screenshot
-│   └── preview-pink.png    # Pink theme preview screenshot
-└── Readme.md               # Project documentation
+│
+├── main.html
+├── Readme.md
+│
+└── preview/
+    ├── preview-pink.png
+    └── preview-teal.png
+```
 
-Use code with caution.
+## 🚀 Getting Started
 
-Copy code text to clipboard.
+Follow these steps to run the project locally:
 
-#### Screenshots
+1. Clone the repository:
 
-Teal Theme SelectedPink Theme Selected
-****
+   ```bash
+   git clone https://github.com/shruti18sk/Color-scheme-switcher.git
+   ```
 
-#### Future Enhancements
+2. Navigate to the project directory:
 
-* Add a **Reset** button to restore the default gray (#f0f0f0) theme.
-* Save the user's selected theme using localStorage so it persists on page reload.
-* Separate CSS and JavaScript into standalone files (style.css and script.js).
+   ```bash
+   cd Color-scheme-switcher
+   ```
+
+3. Open `main.html` in your web browser.
+
+4. Click on any of the five color buttons to explore different themes.
+
+## 🎯 What I Learned
+
+Through this project, I practised:
+
+- Selecting and manipulating DOM elements using JavaScript.
+- Handling click events with `addEventListener()`.
+- Dynamically updating CSS properties through JavaScript.
+- Using CSS transitions and transform effects.
+- Managing active states using JavaScript and CSS classes.
+
+## 👩‍💻 Author
+
+**Shruti Singh Kushwah**
+
+[GitHub Profile](https://github.com/shruti18sk)
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
